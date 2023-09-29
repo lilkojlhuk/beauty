@@ -1,0 +1,35 @@
+@import './reset.scss';
+
+// ========== [ variables open ] ==========
+@import './variables';
+// ========== [ variables close ] ==========
+
+// ========== [ default open ] ==========
+.container {
+    max-width: $containerWidth;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding;
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+// ========== [ default close ] ==========
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    background: #8d8d8d;
+}

@@ -1,0 +1,66 @@
+// ========== [ variables open ] ==========
+@import '../../style/variables.scss';
+// ========== [ variables close ] ==========
+
+// ========== [ burger open ] ==========
+$backgroundColor: #8d8d8d;
+$hoverColor: #bbbbbb;
+$hoverActiveColorAndLink: #000;
+$logoColor: #000;
+// ========== [ burger open ] ==========
+
+.navbar {
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: $backgroundColor;
+
+    &__wrap {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    &__logo {
+        color: $logoColor;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    &__item {
+        &-link {
+            color: $hoverActiveColorAndLink;
+            display: flex;
+            transition: 0.3s;
+            font-size: 16px;
+
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+
+        &-btn {
+            font-size: 16px;
+            transition: 0.3s;
+            color: #000;
+            background: none;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+
+            &:hover {
+                background: #bbbbbb;
+            }
+        }
+    }
+}
